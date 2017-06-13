@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*设置默认编码集*/
+
+/*css 初始化 start */
+
+html,body,div,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,button,select,textarea{
+    margin:0;
+    padding:0;
+}
+
+/*各浏览器显示不同，去掉边框等默认样式*/
+fieldset ,img,input,button{
+    border: none;
+    outline-style:none;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    color: #666;
+    text-decoration:none;
+}
+a:hover {
+    color: #C81623;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+    height: 2000px;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*css 初始化 end */
+
+/*顶部工具栏start*/
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+}
+.shortcut li{
+    float:left;
+    padding:0 10px;
+}
+.shortcut .spacer{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    padding:0;
+    margin-top: 9px;
+}
+.shortcut .dropdowm{
+    position: relative;
+    padding-right: 25px;
+}
+.dropdowm i{
+    width: 14px;
+    height: 7px;
+    overflow:hidden;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+}
+.dropdowm s{
+    font: 400 15px/15px consolas;
+    color: #6A6A6A;
+    position: absolute;
+    top:-7px;
+    left: 0;
+}
+.shortcut .tel-li{
+    padding-left: 25px;
+}
+.tel-icon{
+    width: 15px;
+    height: 20px;
+    background:url(../images/jd2015img.png) top left no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+/*顶部工具栏end*/
+
+/*顶部广告栏start*/
+.topbanner{
+    // height: 80px;
+    background-color: #FCD6E3;
+
+}
+.banner-parent{
+    position: relative;
+}
+
+.close-banner{
+    width: 19px;
+    height: 19px;
+    background: url(../images/close-banner.png) 0 0 no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.close-banner:hover{
+    background: url(../images/close-banner.png) 0 -19px no-repeat;
+}
+/*顶部广告栏end*/
+
+/*header部分start*/
+.header{
+    height: 100px;
+    // background:red;
+}
+.logo{
+    width: 362px;
+    height: 60px;
+    // background-color: pink;
+    padding:20px 0;
+}
+.logo .jd-img{
+    width: 270px;
+    height: 60px;
+    display:block;
+    background: url(../images/logo-201305.png);
+    text-indent: -9999px;
+}
+.search {
+    width: 538px;
+    height: 36px;
+    background-color: blue;
+    margin-top: 25px;
+}
+.search input{
+    width: 450px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    float: left;
+    font: 400 14px/32px "微软雅黑";
+    color: #666;
+    padding-left:4px;
+}
+.search button{
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    float: left;
+    font: 400 16px/36px "微软雅黑";
+    color: #fff;
+    cursor: pointer;
+}
+.car{
+    width: 96px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    margin: 25px 65px 0 0;
+    padding-left: 43px;
+    line-height: 34px;
+    position: relative;
+}
+.car .icon1{
+    width: 16px;
+    height: 13px;
+    background:url(../images/jd2015img.png) -1px -59px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 19px;
+}
+.car .icon2{
+    font: 400 13px/13px simsun;
+    color: #999;
+    position: absolute;
+    top: 11PX;
+    right: 10px;
+}
+.car .icon3{
+    // width: 16px;
+    min-width: 8px;
+    height: 14px;
+    background-color: #C81623;
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    font: 400 12px/14px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    border-radius:7px 7px 7px 0;
+    padding: 0 4px;
+}
+.hotwords{
+    width: 550px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.hotwords a{
+    margin-right:10px;
+    float: left;
+}
+
+/*header部分end*/
+
+/*footer部分start*/
+.footer{
+    height: 493px;
+    // background-color: red;
+}
+.service {
+    height: 296px;
+    // background-color: pink;
+}
+/*方法一 start*/
+.slogan{
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.slogan .w{
+    height: 94px;
+    background-color: #F5F5F5;
+}
+.slogan-item {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+.slogan1 {
+    margin-left: -604px;
+}
+
+.slogan2 {
+    margin-left: -304px;
+}
+
+.slogan4 {
+    margin-left: 304px;
+}
+/*方法一 end*/
+
+/*方法二 start*/
+.pic-area {
+    height: 54px;
+    background-color: #F5F5F5;
+    padding:20px 0;
+}
+.pic-area .item,
+.pic-area .item i{
+    display:inline-block;
+    width: 220px;
+    height: 54px;
+    text-align:center;
+    line-height: 54px;
+    position: relative;
+    margin-right: 80px;
+}
+.pic-area .item i{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.pic-area .s1 i{
+    background: url(../images/slogen1.png);
+}
+.pic-area .s2 i{
+    background: url(../images/slogen2.png);
+}
+.pic-area .s3 i{
+    background: url(../images/slogen3.png);
+}
+.pic-area .s4 i{
+    background: url(../images/slogen4.png);
+}
+.info{
+    // height: 186px;
+    // background-color: blue;
+    padding-top: 16px;
+    padding-bottom: 25px;
+}
+.info dl{
+    float: left;
+    width: 199px;
+    // height: 202px;
+}
+.info .coverage-dt,
+.info dt {
+    font: 400 16px/35px "microsoft yahei";
+}
+.info .coverage-dd,
+.info dd {
+    line-height: 20px;
+}
+.info .last {
+    width: 100px;
+}
+.info .coverage {
+    width: 185px;
+    height: 169px;
+    background: url(../images/china.png) left bottom no-repeat;
+    float: right;
+    margin-right: 47px;
+    padding-left: 20px;
+}
+
+
+.bottom {
+    // height: 196px;
+    // background: yellow;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.links a{
+    margin: 0 5px;
+}
+.copyright {
+    margin-top: 15px;
+}
+.authentication {
+    margin-top: 10px;
+}
+.authentication a {
+    margin: 0 5px;
+}

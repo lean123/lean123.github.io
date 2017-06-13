@@ -1,0 +1,43 @@
+/* css初始化 B */
+html,body,p,h1,h2,h3,ul,li,img,input{
+    margin: 0;
+    padding: 0;
+}
+img,input{
+    border: 0;
+}
+body{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #666;
+    background:#fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+a:hover{
+    color:red;
+}
+.clearfix:after{
+    content:"";
+    height:0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+/* css 初始化 E */
+
